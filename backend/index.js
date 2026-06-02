@@ -1,3 +1,4 @@
+//https://github.com/meabhisingh/mernProjectEcommerce
 import express from 'express';
 import cors from 'cors';
 import { exec } from 'child_process';
@@ -5,7 +6,7 @@ import { promisify } from 'util';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
-import { PrintFolders } from '../architecture-analyser/scan.js'
+import { PrintFolders } from '../architecture-analyser/mern-stack/scan.js'
 const execAsync = promisify(exec);
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
