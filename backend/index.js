@@ -1,4 +1,5 @@
 //https://github.com/meabhisingh/mernProjectEcommerce
+//https://github.com/shamahoque/mern-social
 import express from 'express';
 import cors from 'cors';
 import { exec } from 'child_process';
@@ -20,7 +21,12 @@ app.post('/api/analyse', async (req, res) => {
     return res.status(400).json({ error: 'Valid GitHub URL is required.' });
   }
   try {
-    const tempFolderName = url.split('/').pop();
+    let cleanUrl = url.trim();
+    if (cleanUrl.endsWith('/')) cleanUrl = cleanUrl.slice(0, -1);
+    
+    let tempFolderName = cleanUrl.split('/').pop();
+    if (tempFolderName.endsWith('.git')) tempFolderName = tempFolderName.slice(0, -4);
+    
     const tempFolderPath = path.join(__dirname, 'temp', tempFolderName);
 
     // Ensure temp directory exists
@@ -35,14 +41,16 @@ app.post('/api/analyse', async (req, res) => {
       fs.rmSync(tempFolderPath, { recursive: true, force: true });
     }
 
-    console.log(`git clone "${url}" "${tempFolderPath}"`);
+    console.log(`git clone "${cleanUrl}" "${tempFolderPath}"`);
 
-    // Run git clone in terminal
-    const temp = await execAsync(`git clone "${url}" "${tempFolderPath}"`);
+    // Run git clone in terminal without hanging on prompts
+    const temp = await execAsync(`git clone "${cleanUrl}" "${tempFolderPath}"`, {
+      env: { ...process.env, GIT_TERMINAL_PROMPT: '0' }
+    });
     console.log(temp);
 
     // Call PrintFolders AFTER the repository has been cloned
-    await PrintFolders(url);
+    await PrintFolders(cleanUrl);
 
     console.log(`Successfully cloned repository.`);
 

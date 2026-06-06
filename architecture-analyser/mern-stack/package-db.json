@@ -1,0 +1,424 @@
+{
+  "bullmq": {
+    "purpose": "Background job queue",
+    "architecture_role": "Message Queue",
+    "category": "queue",
+    "resource": "Redis"
+  },
+  "resend": {
+    "purpose": "Email delivery service",
+    "architecture_role": "Communication Service",
+    "category": "email",
+    "resource": "Resend"
+  },
+  "kafkajs": {
+    "purpose": "Apache Kafka client",
+    "architecture_role": "Event Streaming",
+    "category": "queue",
+    "resource": "Kafka"
+  },
+  "express": {
+    "package": "express",
+    "purpose": "Minimalist web framework for Node.js, building robust web applications and APIs.",
+    "architecture_role": "Web server framework",
+    "category": "api-framework"
+  },
+  "cookie-parser": {
+    "package_name": "cookie-parser",
+    "purpose": "Parse incoming HTTP cookies from request header into an accessible object.",
+    "architecture_role": "Web request middleware",
+    "category": "utility",
+    "resource": null
+  },
+  "body-parser": {
+    "package": "body-parser",
+    "purpose": "Parses incoming HTTP request bodies (JSON, URL-encoded, raw) for Express.js.",
+    "architecture_role": "HTTP request parser",
+    "category": "api-framework",
+    "resource": null
+  },
+  "express-fileupload": {
+    "package_name": "express-fileupload",
+    "purpose": "Middleware for handling file uploads and parsing multipart/form-data in Express applications.",
+    "architecture_role": "File upload processor",
+    "category": "utility",
+    "resource": "filesystem"
+  },
+  "dotenv": {
+    "package_name": "dotenv",
+    "purpose": "Loads environment variables from a .env file into process.env.",
+    "architecture_role": "Configuration loader",
+    "category": "utility",
+    "resource": null
+  },
+  "mongoose": {
+    "package_name": "mongoose",
+    "purpose": "Provides elegant MongoDB object modeling for Node.js, including schema validation and data casting.",
+    "architecture_role": "Object Data Mapper",
+    "category": "orm",
+    "resource": "MongoDB"
+  },
+  "cloudinary": {
+    "package_name": "cloudinary",
+    "purpose": "SDK to programmatically manage, transform, and deliver images/videos via Cloudinary API.",
+    "architecture_role": "Media asset manager",
+    "category": "storage",
+    "resource": "Cloudinary"
+  },
+  "jsonwebtoken": {
+    "package_name": "jsonwebtoken",
+    "purpose": "Signs and verifies JSON Web Tokens for secure authentication and information exchange.",
+    "architecture_role": "Authentication token handler",
+    "category": "auth",
+    "resource": null
+  },
+  "validator": {
+    "package_name": "validator",
+    "purpose": "Validate and sanitize strings for common data types like email, URL.",
+    "architecture_role": "Data validation helper",
+    "category": "utility",
+    "resource": null
+  },
+  "bcryptjs": {
+    "package_name": "bcryptjs",
+    "purpose": "Provides a JavaScript implementation of the bcrypt algorithm for password hashing.",
+    "architecture_role": "Password hashing utility",
+    "category": "auth",
+    "resource": null
+  },
+  "nodemailer": {
+    "package_name": "nodemailer",
+    "purpose": "Send emails from Node.js applications efficiently and easily.",
+    "architecture_role": "Email sending client",
+    "category": "email",
+    "resource": null
+  },
+  "stripe": {
+    "package_name": "stripe",
+    "purpose": "Official Node.js library for integrating Stripe's payment processing APIs.",
+    "architecture_role": "Payment Gateway Client",
+    "category": "payment",
+    "resource": "Stripe API"
+  },
+  "react": {
+    "package_name": "react",
+    "purpose": "JavaScript library for building declarative user interfaces with components.",
+    "architecture_role": "Frontend UI library",
+    "category": "other",
+    "resource": null
+  },
+  "react-dom": {
+    "package_name": "react-dom",
+    "purpose": "Renders React components to the browser's DOM for building user interfaces.",
+    "architecture_role": "UI Rendering Layer",
+    "category": "other",
+    "resource": "Browser DOM"
+  },
+  "compression": {
+    "purpose": "Middleware for GZIP/DEFLATE compression of HTTP responses in Node.js applications.",
+    "architecture_role": "Response data optimizer",
+    "category": "utility",
+    "resource": null
+  },
+  "cors": {
+    "package": "cors",
+    "purpose": "Enable Cross-Origin Resource Sharing (CORS) with configurable options for web servers.",
+    "architecture_role": "HTTP Middleware",
+    "category": "utility",
+    "resource": null
+  },
+  "helmet": {
+    "package_name": "helmet",
+    "purpose": "Enhances web application security by setting various HTTP security headers.",
+    "architecture_role": "Security HTTP Middleware",
+    "category": "utility",
+    "resource": null
+  },
+  "lodash": {
+    "package_name": "lodash",
+    "purpose": "A modern JavaScript utility library providing modularity, performance, and extra features.",
+    "architecture_role": "JavaScript utility toolkit",
+    "category": "utility",
+    "resource": null
+  },
+  "formidable": {
+    "package_name": "formidable",
+    "purpose": "Parses incoming form data and file uploads from HTTP requests in Node.js.",
+    "architecture_role": "Request body parser",
+    "category": "utility",
+    "resource": null
+  },
+  "express-jwt": {
+    "package_name": "express-jwt",
+    "purpose": "Express middleware to protect API routes with JSON Web Token (JWT) authentication.",
+    "architecture_role": "JWT auth middleware",
+    "category": "auth",
+    "resource": null
+  },
+  "react-router-dom": {
+    "package_name": "react-router-dom",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "@material-ui/core": {
+    "package_name": "@material-ui/core",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "@material-ui/icons": {
+    "package_name": "@material-ui/icons",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "prop-types": {
+    "package_name": "prop-types",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "@material-ui/styles": {
+    "package_name": "@material-ui/styles",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "webpack": {
+    "package_name": "webpack",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "webpack-dev-middleware": {
+    "package_name": "webpack-dev-middleware",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "webpack-hot-middleware": {
+    "package_name": "webpack-hot-middleware",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "react-hot-loader": {
+    "package_name": "react-hot-loader",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "webpack-node-externals": {
+    "package_name": "webpack-node-externals",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "overlay-navbar": {
+    "package_name": "overlay-navbar",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "webfontloader": {
+    "package_name": "webfontloader",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "react-icons": {
+    "package_name": "react-icons",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "@material-ui/lab": {
+    "package_name": "@material-ui/lab",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "react-helmet": {
+    "package_name": "react-helmet",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "axios": {
+    "package_name": "axios",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "react-redux": {
+    "package_name": "react-redux",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "react-alert": {
+    "package_name": "react-alert",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "react-material-ui-carousel": {
+    "package_name": "react-material-ui-carousel",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "react-js-pagination": {
+    "package_name": "react-js-pagination",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "redux": {
+    "package_name": "redux",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "redux-thunk": {
+    "package_name": "redux-thunk",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "redux-devtools-extension": {
+    "package_name": "redux-devtools-extension",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "country-state-city": {
+    "package_name": "country-state-city",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "@stripe/react-stripe-js": {
+    "package_name": "@stripe/react-stripe-js",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "@stripe/stripe-js": {
+    "package_name": "@stripe/stripe-js",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "@material-ui/data-grid": {
+    "package_name": "@material-ui/data-grid",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "react-chartjs-2": {
+    "package_name": "react-chartjs-2",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "react-alert-template-basic": {
+    "package_name": "react-alert-template-basic",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "bcrypt": {
+    "package_name": "bcrypt",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "moment": {
+    "package_name": "moment",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "react-app-polyfill": {
+    "package_name": "react-app-polyfill",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "core-js": {
+    "package_name": "core-js",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "formik": {
+    "package_name": "formik",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "yup": {
+    "package_name": "yup",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "antd": {
+    "package_name": "antd",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "~antd": {
+    "package_name": "~antd",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  },
+  "redux-promise": {
+    "package_name": "redux-promise",
+    "purpose": "-",
+    "architecture_role": "-",
+    "category": "other",
+    "resource": null
+  }
+}

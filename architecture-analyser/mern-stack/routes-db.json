@@ -1,0 +1,19 @@
+[
+  {
+    "file": "App.js",
+    "routes": [
+      {
+        "path": "/",
+        "component": "Unknown"
+      },
+      {
+        "path": "/login",
+        "component": "Unknown"
+      },
+      {
+        "path": "/register",
+        "component": "Unknown"
+      }
+    ]
+  }
+]
